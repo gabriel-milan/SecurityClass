@@ -40,14 +40,14 @@ A seguir, é feito o uso de decoradores para incluir a rota dos diretórios raiz
 ## A injeção de código
 
 Primeiramente, testa-se o funcionamento comum da aplicação, conforme os *screenshots* a seguir:
-![empty_args](screenshots/empty_args.png)
-![echoTeste](screenshots/echoTeste.png)
+![empty_args](https://github.com/gabriel-milan/SecurityClass/tree/master/Trabalho%203%20-%20Injeção%20de%20código/screenshots/empty_args.png)
+![echoTeste](https://github.com/gabriel-milan/SecurityClass/tree/master/Trabalho%203%20-%20Injeção%20de%20código/screenshots/echoTeste.png)
 
 Após, verifica-se a possibilidade de injeção de código realizando a chamada de um *alert()*:
-![alertTest](screenshots/alertTest.png)
+![alertTest](https://github.com/gabriel-milan/SecurityClass/tree/master/Trabalho%203%20-%20Injeção%20de%20código/screenshots/alertTest.png)
 
 Em seguida, testa-se a oportunidade de uso da biblioteca *"os"*:
-![osNameTest](screenshots/osNameTest.png)
+![osNameTest](https://github.com/gabriel-milan/SecurityClass/tree/master/Trabalho%203%20-%20Injeção%20de%20código/screenshots/osNameTest.png)
 
 Uma vez que essa biblioteca está disponível para uso num ataque de injeção de código, é possível obter com facilidade uma *shell* completa do servidor, da seguinte maneira:
 ```
@@ -58,7 +58,7 @@ Com essa simples linha de comando, é possível executar qualquer instrução di
 Sabendo disso, foi elaborado um *script Python* simples que funciona como a própria *shell* do servidor, uma vez que, quando é dada uma instrução, ela é passada por XSS para o servidor, executada e a resposta é *parseada* para demonstrar estritamente o necessário.
 
 Fazendo uso desse *script*:
-![xssShell](screenshots/xssShell.png)
+![xssShell](https://github.com/gabriel-milan/SecurityClass/tree/master/Trabalho%203%20-%20Injeção%20de%20código/screenshots/xssShell.png)
 
 ## Conclusão
 A partir desse trabalho, foi possível concluir que todos os *inputs* dos servidores devem ser devidamente tratados, de modo a evitar qualquer invasão. Também foi possível notar a responsabilidade de usar a biblioteca *"os"* do *Python*, uma vez que essa possui grandes privilégios na máquina, portanto, pode se tornar uma brecha de segurança extremamente séria.
